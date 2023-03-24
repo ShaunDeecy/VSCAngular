@@ -1,0 +1,23 @@
+<div class="container">
+    <form [formGroup]="loginForm" (submit)="onSubmit()">
+      <h1>Register</h1>
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required formControlName="username">
+  
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required  formControlName="email">
+  
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required formControlName="password">
+  
+      <label for="confirm-password"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="confirm-password" required formControlName="confirmedPassword">
+  
+      <button type="submit">Register</button>
+      <div class="login">
+        <p>Already have an account?</p>
+        <button type="button" (click)="ToLogin()">Login</button>
+      </div>
+    </form>
+  </div>
+  

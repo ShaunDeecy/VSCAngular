@@ -1,0 +1,7 @@
+  <ul class="heroes">
+    <li *ngFor="let plate of licenseplates">
+      <a routerLink="/detail/{{plate.id}}">
+        <span class="badge">{{plate.id}}</span> {{plate.plateName}}
+      </a>
+    </li>
+  </ul>
